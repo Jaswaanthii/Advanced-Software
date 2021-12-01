@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+   <body background="https://cdn.wallpapersafari.com/52/46/CXhRVm.jpg">
+   <div align="center">
+   <br>
+      <a href = "\staff">
+      <button style="height:75px;width:500px; background-color: #35A7CF ; border-color: #FFFFFF; color: #FFFFFF" >
+            Advisor Dashboard</button></a>
+        <br><br>
+        <h1>Update</h1>
+      <form action = "{{ url_for('update') }}" method = "POST">
+         <br><br><br>
+          Username
+         <input type = "text" name = "username" /></br></br>
+          New Email
+         <input type = "text" name = "email" /></br></br>
+         <input type = "submit" value = "update" />
+      </form>
+    </div>
+   </body>
+</html>

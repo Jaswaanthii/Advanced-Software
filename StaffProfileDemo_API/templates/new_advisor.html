@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+   <body>
+   <div align="center">
+   <br>
+      <a href = "\staff">
+      <button style="height:75px;width:500px; background-color: #B3B6B7 ; border-color: #B3B6B7; color: #34495E" >
+            Advisor Dashboard</button></a>
+      <form action = "{{ url_for('register_advisor') }}" method = "POST">
+         <br><br>
+         <h1>New Advisor Profile</h1>
+         <br><br><br>
+         Username
+         <input type = "text" name = "username" /><br><br>
+         Email
+         <input type = "text" name = "email" /><br><br>
+         Start work year (yyyy)
+         <input type = "text" name = "start_year" /><br><br>
+         Remote (location)
+         <input type = "text" name = "remote" /><br><br>
+         Profile type (video or text)
+         <input type = "text" name = "profile" /><br><br>
+         Project to assign
+         <input type = "text" name = "project" /><br><br>
+         Contract pay (£)
+         <input type = "text" name = "pay" id="pay" value="0.0" placeholder="0.0"/><br><br>
+         <input type = "submit" value = "register" />
+      </form>
+   </div>
+   </body>
+</html>
